@@ -1,0 +1,95 @@
+html {
+  display: flex;
+  justify-content: center;
+}
+body {
+  max-width: 1000px;
+  /*height: 700px;*/
+  margin: 0px;
+  padding: 5px;
+}
+:root {
+  --text-color: black;
+  --text-opacity-color: gray;
+  --input-underline-color: rgb(144, 142, 142);
+  --hover-color: rgb(255, 255, 190);
+  --focus-color: yellow;
+}
+
+body * {
+  color: var(--text-color);
+  font-weight: 300;
+}
+
+.status-bar {
+  display: flex;
+  height: 20px;
+  justify-content: space-between;
+}
+
+.log-in-header {
+  height: 175px;
+  padding: 42px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*보글보글 효과 넣기.. 보라색?*/
+}
+.log-in-header > * {
+  margin: 10.5px 21px;
+  display: inline-block;
+  text-align: center;
+}
+.log-in-header__title {
+  font-size: 30px;
+}
+.log-in-header__text {
+  color: var(--text-opacity-color);
+}
+
+#log-in-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#log-in-form > input,
+#log-in-form > span {
+  display: inline-block;
+  margin-bottom: 14px;
+  padding: 0;
+  width: 95%;
+  height: 49px;
+  font-size: 17px;
+}
+.log-in-form__text {
+  border: 0px;
+  border-bottom: 1px solid var(--input-underline-color);
+  transition: border-bottom 300ms ease-in-out;
+}
+.log-in-form__text:focus {
+  outline: none;
+  border-bottom: 1px solid var(--focus-color);
+  /*border-bottom: 중앙점에서 가로로 확장되는 애니메이션 만들고 싶은데...*/
+}
+#submit-blank {
+  margin-top: 20px;
+}
+#log-in-form > input[type="submit"] {
+  border: 0;
+  transition: background-color 300ms ease-in-out;
+  border-radius: 5px;
+}
+#log-in-form > input[type="submit"]:hover {
+  background-color: var(--hover-color);
+}
+a {
+  text-align: center;
+  text-decoration: none;
+  color: var(--text-opacity-color);
+}
+a:hover {
+  text-decoration: underline;
+  color: var(--text-color);
+}
