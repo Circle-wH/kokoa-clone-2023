@@ -1,12 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
 html {
   display: flex;
   justify-content: center;
 }
+/*페이지 확장됐을 때 가운데로 오도록 함*/
+
 body {
   max-width: 1000px;
   /*height: 700px;*/
   margin: 0px;
   padding: 5px;
+  color: var(--text-color);
+  font-weight: 300;
+  font-family: "Open Sans", sans-serif;
 }
 :root {
   --text-color: black;
@@ -16,16 +23,30 @@ body {
   --focus-color: yellow;
 }
 
-body * {
-  color: var(--text-color);
-  font-weight: 300;
-}
-
 .status-bar {
   display: flex;
   height: 20px;
   justify-content: space-between;
 }
+.status-bar__column {
+  width: 33.33%;
+}
+.status-bar__column:first-child span {
+  margin-right: 5px;
+}
+.status-bar__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+.status-bar__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.status-bar__column .fa-battery-three-quarters {
+  margin: 0 2px 1px 5px;
+}
+/*부모와 자식 사이를 공백으로 이어주면 조상님까지 연결 가능(바로 위/아래가 아니어도 됨)*/
 
 .log-in-header {
   height: 175px;
