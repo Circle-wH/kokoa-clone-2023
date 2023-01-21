@@ -28,18 +28,18 @@
     <header class="log-in-header">
       <h1 class="log-in-header__title">Welcome to wH's KokoaClone</h1>
       <p class="log-in-header__text">
-        If you have a Kokoa Account, <br />log in with your email or phone
-        number.
+        If you have a Kokoa Account, log in with your email or phone number.
       </p>
     </header>
 
-    <form id="log-in-form">
+    <form action="friends.html" method="get" id="log-in-form">
       <input
+        name="username"
+        required
         type="text"
         placeholder="Email or phone number"
-        class="log-in-form__text"
       />
-      <input type="password" placeholder="Password" class="log-in-form__text" />
+      <input name="password" required type="password" placeholder="Password" />
       <input type="submit" value="Log In" id="submit-blank" />
       <input type="submit" value="Sign Up" />
       <a href="#">Find Kokoa Account or Password</a>

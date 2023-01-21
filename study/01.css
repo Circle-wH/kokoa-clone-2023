@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+@import "reset-s.css";
+@import "status-bar-s.css";
 
 html {
   display: flex;
@@ -9,44 +11,18 @@ html {
 body {
   max-width: 1000px;
   /*height: 700px;*/
-  margin: 0px;
-  padding: 5px;
   color: var(--text-color);
-  font-weight: 300;
+  font-weight: 400;
   font-family: "Open Sans", sans-serif;
+  user-select: none;
 }
 :root {
   --text-color: black;
   --text-opacity-color: gray;
-  --input-underline-color: rgb(144, 142, 142);
+  --input-border-color: rgba(144, 142, 142, 0.3);
   --hover-color: rgb(255, 255, 190);
   --focus-color: yellow;
 }
-
-.status-bar {
-  display: flex;
-  height: 20px;
-  justify-content: space-between;
-}
-.status-bar__column {
-  width: 33.33%;
-}
-.status-bar__column:first-child span {
-  margin-right: 5px;
-}
-.status-bar__column:nth-child(2) {
-  display: flex;
-  justify-content: center;
-}
-.status-bar__column:last-child {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-.status-bar__column .fa-battery-three-quarters {
-  margin: 0 2px 1px 5px;
-}
-/*부모와 자식 사이를 공백으로 이어주면 조상님까지 연결 가능(바로 위/아래가 아니어도 됨)*/
 
 .log-in-header {
   height: 175px;
@@ -59,7 +35,6 @@ body {
 }
 .log-in-header > * {
   margin: 10.5px 21px;
-  display: inline-block;
   text-align: center;
 }
 .log-in-header__title {
@@ -67,32 +42,32 @@ body {
 }
 .log-in-header__text {
   color: var(--text-opacity-color);
+  font-weight: 400;
 }
 
 #log-in-form {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#log-in-form > input,
-#log-in-form > span {
-  display: inline-block;
+#log-in-form > input {
   margin-bottom: 14px;
   padding: 0;
-  width: 95%;
+  width: 90%;
   height: 49px;
   font-size: 17px;
 }
 .log-in-form__text {
   border: 0px;
-  border-bottom: 1px solid var(--input-underline-color);
+  border-bottom: 1px solid var(--input-border-color);
   transition: border-bottom 300ms ease-in-out;
 }
 .log-in-form__text:focus {
-  outline: none;
   border-bottom: 1px solid var(--focus-color);
   /*border-bottom: 중앙점에서 가로로 확장되는 애니메이션 만들고 싶은데...*/
+}
+.log-in-form__text::placeholder {
+  opacity: 0.7;
 }
 #submit-blank {
   margin-top: 20px;
@@ -101,16 +76,17 @@ body {
   border: 0;
   transition: background-color 300ms ease-in-out;
   border-radius: 5px;
+  cursor: pointer;
 }
 #log-in-form > input[type="submit"]:hover {
   background-color: var(--hover-color);
 }
-a {
+#log-in-form > a {
   text-align: center;
   text-decoration: none;
   color: var(--text-opacity-color);
 }
-a:hover {
+#log-in-form > a:hover {
   text-decoration: underline;
   color: var(--text-color);
 }

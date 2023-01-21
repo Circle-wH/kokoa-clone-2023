@@ -1,0 +1,56 @@
+.log-in-header {
+  margin: 1.5cm 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+}
+
+.log-in-header__title {
+  margin-bottom: 0.6cm;
+  font-size: 25px;
+}
+
+.log-in-header__text {
+  width: 60%;
+  opacity: 0.5;
+}
+
+#log-in-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+
+#log-in-form input {
+  border: none;
+  padding: 15px 0;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+#log-in-form input::placeholder {
+  border-color: var(--yellow);
+}
+#log-in-form input:not([type="submit"]) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  transition: border-color 300ms ease-in-out;
+}
+
+#log-in-form input:focus {
+  border-color: rgba(250, 225, 0, 0.4);
+}
+
+#log-in-form input[type="submit"] {
+  background-color: var(--yellow);
+  cursor: pointer;
+  padding: 20px 0px;
+  border-radius: 5px;
+}
+
+#log-in-form a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 13px;
+}
