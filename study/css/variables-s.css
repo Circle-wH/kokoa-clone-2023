@@ -1,0 +1,8 @@
+:root {
+  --text-color: black;
+  --text-opacity-color: gray;
+  --input-border-color: rgba(144, 142, 142, 0.3);
+  --hover-color: rgb(255, 255, 190);
+  --focus-color: yellow;
+  --background-color-default: rgb(240, 240, 240);
+}
