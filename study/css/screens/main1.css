@@ -1,25 +1,6 @@
 .main1-page {
-  max-width: 1000px;
-  width: 100%;
   display: flex;
   flex-direction: column;
-}
-.main1-page-friends {
-  margin: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.main1-page-friends > span {
-  width: 90%;
-  font-size: 34px;
-  font-weight: 600;
-}
-.main1-page-friends__icon {
-  width: 11%;
-  text-align: center;
-  font-size: 25px;
-  margin-left: 5px;
 }
 
 .main1-page__notice {

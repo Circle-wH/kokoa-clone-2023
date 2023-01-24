@@ -4,7 +4,10 @@
 
 /* components */
 @import "components/status-bar-s.css";
-@import "components/navigation-bar-s.css"; /* screens */
+@import "components/navigation-bar-s.css";
+@import "components/page-header-s.css";
+
+/* screens */
 @import "screens/log-in-page.css";
 @import "screens/main1.css";
 
@@ -18,6 +21,7 @@ body {
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
   user-select: none;
+  height: 1000vh;
 }
 
 a {

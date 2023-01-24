@@ -1,0 +1,15 @@
+.main1-page-friends {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+.main1-page-friends > span {
+  font-size: 32px;
+  font-weight: 600;
+}
+.main1-page-friends__icon a {
+  font-size: 20px;
+  margin-left: 10px;
+}

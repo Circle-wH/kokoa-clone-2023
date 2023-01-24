@@ -27,3 +27,38 @@
 .navigation-bar i {
   font-size: 20pt;
 }
+.navigation-bar__comment {
+  display: block;
+  position: relative;
+}
+
+.navigation-bar__chat-nb {
+  position: absolute;
+  top: -15%;
+  right: -30%;
+
+  width: 15pt;
+  height: 15pt;
+  font-size: 10pt;
+  background-color: rgb(228, 80, 39);
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--background-color-default);
+}
+
+.navigation-bar__dot {
+  position: absolute;
+  top: -15%;
+  right: -30%;
+
+  width: 5pt;
+  height: 5pt;
+  font-size: 0;
+  background-color: rgb(228, 80, 39);
+  border-radius: 50%;
+
+  color: var(--background-color-default);
+}
