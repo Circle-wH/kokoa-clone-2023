@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to Kokoa Talk</title>
+    <title>Friends - Kokoa Talk(s)</title>
     <link href="css/cocoa-clone.css" rel="stylesheet" />
   </head>
 
@@ -25,9 +25,9 @@
       </div>
     </div>
 
-    <div class="main1-page-friends">
+    <div class="page-header">
       <span>Friends</span>
-      <div class="main1-page-friends__icon">
+      <div class="page-header__icon">
         <a href="#">
           <i class="fa-solid fa-magnifying-glass"></i>
         </a>
@@ -46,28 +46,50 @@
         <span>Friends' Names Display</span>
         <i class="fa-solid fa-chevron-right"></i>
       </a>
+    </div>
 
-      <div class="main1-page__profile">
-        <img src="img/kassy.jpg" />
-        <span>wH</span>
+    <main class="friends-screen">
+      <div class="user-profile">
+        <div class="user-profile__inform">
+          <img
+            class="user-profile__img user-profile__size-l"
+            src="img/kassy.jpg"
+          />
+          <div class="user-profile__text">
+            <h4 class="user-profile__title">wH</h4>
+            <!--
+            <h6 class="user-profile__subtitle"></h6>
+            -->
+          </div>
+        </div>
+        <div class="user-profile__more"></div>
       </div>
 
       <div class="main1-page__channel">
         <span>Channel</span> <i class="fa-solid fa-chevron-up"></i>
       </div>
 
-      <div class="main1-page__banner">
-        <div class="main1-page__banner-ch">
-          <img src="img/kakao-ch.png" />
-          <span>Channel</span>
+      <div class="user-profile">
+        <div class="user-profile__inform">
+          <img
+            class="user-profile__img user-profile__size-s"
+            src="img/kakao-ch.png"
+          />
+          <div class="user-profile__text">
+            <h4 class="user-profile__title user-profile__not-bold">Channel</h4>
+            <!--
+            <h6 class="user-profile__subtitle"></h6>
+            -->
+          </div>
         </div>
-        <div class="main1-page__banner-nb">
-          <span> 2 &nbsp;</span>
-          <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+        <div class="user-profile__more">
+          2
+          <i class="fa-solid fa-chevron-right"></i>
         </div>
       </div>
+
       <!---->
-    </div>
+    </main>
 
     <div class="navigation-bar">
       <a href="main1.html" class="navigation-bar__main">
