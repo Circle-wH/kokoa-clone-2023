@@ -6,12 +6,15 @@
 @import "components/status-bar.css";
 @import "components/nav-bar.css";
 @import "components/screen.header.css";
+@import "components/user-component.css";
 
 /*Screens*/
 @import "screens/login.css";
+@import "screens/friends.css";
 
 /*모든 Screens에 적용하는 방법*/
 body {
+  color: #2e363e;
   font-family: "Open Sans", sans-serif;
   height: 1000vh;
 }
