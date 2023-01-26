@@ -1,0 +1,20 @@
+.invite {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.invite__box i {
+  padding-top: 20px;
+  font-size: 30px;
+}
+
+.invite__box h4 {
+  margin: 20px 0px;
+  font-size: 14pt;
+  line-height: 120%;
+}
+
+.invite__text-sm {
+  font-size: 10pt;
+}

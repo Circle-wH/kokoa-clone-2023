@@ -7,10 +7,13 @@
 @import "components/navigation-bar-s.css";
 @import "components/page-header-s.css";
 @import "components/user-profile.css";
+@import "components/invite-s.css";
+@import "components/gray-line.css";
 
 /* screens */
 @import "screens/log-in-page.css";
 @import "screens/main1.css";
+@import "screens/main3-find-s.css";
 
 body {
   max-width: 1000px;
@@ -31,4 +34,8 @@ a {
 
 a:not(#log-in-form > a) {
   color: #391b1b;
+}
+
+.friends-screen {
+  margin: 0px 20px;
 }

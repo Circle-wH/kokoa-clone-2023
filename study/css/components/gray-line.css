@@ -1,0 +1,9 @@
+/* HTML
+<div class="gray-line"></div>
+      */
+
+.gray-line {
+  background-color: var(--background-color-default);
+  margin: 15px 0px;
+  height: 1px;
+}

@@ -1,6 +1,5 @@
 .user-profile {
   justify-content: space-between;
-  margin: 0px 20px;
   padding-top: 15px;
   padding-bottom: 20px;
 }
@@ -32,6 +31,26 @@
 
 .user-profile__more {
   color: var(--text-opacity-color);
+}
+
+.user-profile__time {
+  font-size: 12pt;
+}
+.user-profile__nb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  right: -20px;
+
+  margin-top: 10px;
+  width: 15pt;
+  height: 15pt;
+  font-size: 10pt;
+  color: white;
+  background-color: rgb(228, 80, 39);
+  border-radius: 50%;
 }
 
 .user-profile__size-l {
