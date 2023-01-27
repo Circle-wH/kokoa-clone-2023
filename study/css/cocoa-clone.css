@@ -8,7 +8,6 @@
 @import "components/page-header-s.css";
 @import "components/user-profile.css";
 @import "components/invite-s.css";
-@import "components/gray-line.css";
 
 /* screens */
 @import "screens/log-in-page.css";
@@ -17,7 +16,7 @@
 
 body {
   max-width: 1000px;
-  height: 100vh;
+
   /*height: 700px;*/
   margin: 0 auto;
   /*페이지 확장됐을 때 가운데로 오도록 함*/
@@ -25,7 +24,6 @@ body {
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
   user-select: none;
-  height: 1000vh;
 }
 
 a {
@@ -37,5 +35,5 @@ a:not(#log-in-form > a) {
 }
 
 .friends-screen {
-  margin: 0px 20px;
+  margin: 0px 20px 61px;
 }
