@@ -1,0 +1,11 @@
+.new-dot {
+  background-color: tomato;
+
+  font-size: 0;
+  width: 5px;
+  height: 5px;
+
+  border-radius: 50%;
+
+  position: absolute;
+}
