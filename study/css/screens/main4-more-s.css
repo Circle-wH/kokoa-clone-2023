@@ -1,0 +1,5 @@
+.suggestion {
+  margin: 12px 0px;
+  padding-top: 25px;
+  border-top: 1px solid var(--background-color-default);
+}

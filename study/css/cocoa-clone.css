@@ -13,6 +13,7 @@
 @import "screens/log-in-page.css";
 @import "screens/main1.css";
 @import "screens/main3-find-s.css";
+@import "screens/main4-more-s.css";
 
 body {
   max-width: 1000px;

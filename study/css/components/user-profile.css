@@ -32,6 +32,9 @@
 .user-profile__more {
   color: var(--text-opacity-color);
 }
+.user-profile__more i {
+  color: initial;
+}
 
 .user-profile__time {
   font-size: 12pt;
@@ -65,4 +68,14 @@
 
 .user-profile__not-bold {
   font-weight: 400;
+}
+
+.user-profile__warning {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 2px solid tomato;
+  color: tomato;
+  text-align: center;
 }

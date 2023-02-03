@@ -4,6 +4,10 @@
   text-align: center;
 }
 
+.invite__box {
+  width: 24%;
+}
+
 .invite__box i {
   padding-top: 20px;
   font-size: 30px;
@@ -17,4 +21,8 @@
 
 .invite__text-sm {
   font-size: 10pt;
+}
+
+.invie__text-gray {
+  color: var(--text-opacity-color);
 }
