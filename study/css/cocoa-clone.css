@@ -14,6 +14,7 @@
 @import "screens/main1.css";
 @import "screens/main3-find-s.css";
 @import "screens/main4-more-s.css";
+@import "screens/setting-s.css";
 
 body {
   max-width: 1000px;
@@ -37,4 +38,8 @@ a:not(#log-in-form > a) {
 
 .friends-screen {
   margin: 0px 20px 61px;
+}
+
+.friends-screen__no-margin {
+  margin: 0px 20px;
 }

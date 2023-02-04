@@ -1,0 +1,51 @@
+.settings__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0px;
+}
+
+.settings__menu > div > i {
+  margin-right: 15px;
+}
+
+.settings__menu span {
+  font-size: 22px;
+}
+
+.settings__menu > div {
+  display: flex;
+  align-items: center;
+}
+
+.settings__menu > :last-child {
+  color: var(--text-opacity-color);
+  font-size: 22px;
+}
+
+.settings__gray-line {
+  border-bottom: 1px solid var(--background-color-default);
+}
+
+.gray-line {
+  margin: 20px 0px;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(124, 124, 124, 0.3);
+}
+
+.settings__new {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  right: -10px;
+
+  width: 15pt;
+  height: 15pt;
+  font-size: 10pt;
+  color: white;
+  background-color: rgb(228, 80, 39);
+  border-radius: 50%;
+}
