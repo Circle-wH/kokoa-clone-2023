@@ -28,6 +28,7 @@
   margin-top: 8px;
   font-size: 17px;
   color: rgba(0, 0, 0, 0.5);
+  position: relative;
 }
 
 /* 같은 component에서 사이즈를 바꿀 때는 이렇게~~ */
@@ -55,4 +56,25 @@
 .user-component__time {
   display: block;
   margin-bottom: 10px;
+}
+
+.user-component__color-default {
+  color: black;
+}
+
+.user-component__subtitle span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid tomato;
+  border-radius: 50%;
+
+  font-size: 12pt;
+  width: 14px;
+  height: 14px;
+  color: tomato;
+
+  position: absolute;
+  right: -20px;
+  bottom: 0px;
 }
