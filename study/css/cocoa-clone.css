@@ -15,6 +15,7 @@
 @import "screens/main3-find-s.css";
 @import "screens/main4-more-s.css";
 @import "screens/setting-s.css";
+@import "screens/chat-s.css";
 
 body {
   max-width: 1000px;

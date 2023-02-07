@@ -3,7 +3,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px 15px 20px 20px;
+  padding: 20px 0px;
+  margin: 0px 15px 0px 20px;
+}
+
+.page-header > :first-child,
+.page-header > :last-child {
+  width: 33%;
+}
+
+.page-header > :last-child {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .page-header > span:not(.page-header__sm) {
@@ -23,7 +34,8 @@
 
 .page-header__icon span {
   position: absolute;
-  top: 5%;
+  top: 30%;
+  right: -6px;
 
   width: 5pt;
   height: 5pt;

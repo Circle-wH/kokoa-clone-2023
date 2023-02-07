@@ -1,0 +1,127 @@
+.chat-color {
+  background-color: #9bbbd4;
+}
+
+.chat-sticky {
+  position: sticky;
+  top: 30px;
+  z-index: 999;
+}
+
+.chat-day {
+  display: flex;
+  justify-content: center;
+  margin: 15px 40px;
+}
+
+.chat-day__text {
+  padding: 10px 12px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  font-size: 12pt;
+  border-radius: 8%/50%;
+}
+
+.chat__you {
+  display: flex;
+}
+
+.chat__you > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 35%;
+  margin-right: 10px;
+}
+
+.chat-text__talk {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.chat__name {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 12pt;
+
+  margin-bottom: 10px;
+}
+
+.chat__time {
+  display: flex;
+  flex-direction: column-reverse;
+
+  font-size: 8pt;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.chat__me > .chat-text__talk {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.chat__word {
+  padding: 10px;
+  font-size: 14pt;
+}
+
+.chat__you .chat__word {
+  background-color: white;
+  border-radius: 0px 15px 15px 15px;
+  margin-right: 5px;
+}
+
+.chat__me .chat__word {
+  background-color: yellow;
+  border-radius: 15px 0px 15px 15px;
+  margin-left: 5px;
+}
+
+.chat-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  max-width: 1000px;
+
+  background-color: white;
+}
+
+.chat-bar > i {
+  padding: 3px;
+  font-size: 14pt;
+  margin: 0px auto;
+  border: 2px solid gray;
+  border-radius: 30%;
+  color: gray;
+}
+.chat-bar__text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4px 10px 4px 0px;
+  width: 85%;
+  border-radius: 30px;
+  border: 1px solid var(--input-border-color);
+  background-color: var(--background-color-default);
+}
+.chat-bar__text > input {
+  width: 90%;
+  margin: 5px 10px;
+  border: 0px;
+  background-color: var(--background-color-default);
+  font-size: 14pt;
+}
+
+.chat-bar__text > div {
+  display: flex;
+  align-items: center;
+  font-size: 14pt;
+}
+.char-bar__send {
+  padding: 7px;
+  margin: 2px 2px 2px 10px;
+  border-radius: 50%;
+  background-color: yellow;
+}
