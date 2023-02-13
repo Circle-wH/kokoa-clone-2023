@@ -49,6 +49,23 @@
   color: var(--background-color-default);
 }
 
+@keyframes nav-dot--animation {
+  0% {
+    transform: rotatey(0deg);
+  }
+  50% {
+    top: -10px;
+    transform: rotatey(180deg);
+  }
+  100% {
+    transform: rotatey(360deg);
+  }
+}
+
+.navigation-bar__chat-nb {
+  animation: nav-dot--animation 2s ease-in-out infinite;
+}
+
 .navigation-bar__dot {
   position: absolute;
   top: -15%;
@@ -59,4 +76,35 @@
   font-size: 0;
   background-color: rgb(228, 80, 39);
   border-radius: 50%;
+}
+
+@keyframes nav-animation {
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.navigation-bar > a {
+  transform: translatey(50px);
+}
+
+.navigation-bar > a:first-child {
+  animation: nav-animation 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.navigation-bar > a:nth-child(2) {
+  animation: nav-animation 1s ease-in-out;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+.navigation-bar > a:nth-child(3) {
+  animation: nav-animation 1s ease-in-out;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+}
+.navigation-bar > a:last-child {
+  animation: nav-animation 1s ease-in-out;
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
 }

@@ -45,6 +45,7 @@
   justify-content: center;
 
   position: relative;
+  top: 0px;
   right: -20px;
 
   margin-top: 10px;
@@ -54,6 +55,7 @@
   color: white;
   background-color: rgb(228, 80, 39);
   border-radius: 50%;
+  animation: nav-dot--animation 2s ease-in-out infinite;
 }
 
 .user-profile__size-l {

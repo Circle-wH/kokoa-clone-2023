@@ -8,6 +8,7 @@
 @import "components/page-header-s.css";
 @import "components/user-profile.css";
 @import "components/invite-s.css";
+@import "components/kokoa-loading-s.css";
 
 /* screens */
 @import "screens/log-in-page.css";

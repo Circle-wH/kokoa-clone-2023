@@ -86,3 +86,16 @@
   bottom: 12px;
   right: 10px;
 }
+
+@keyframes open-chat__heart {
+  50% {
+    color: rgba(221, 95, 145, 0.99);
+  }
+  100% {
+    color: white;
+  }
+}
+
+.open-chat__img:hover > .open-chat__heart {
+  animation: open-chat__heart 1.5s ease-in-out infinite;
+}
