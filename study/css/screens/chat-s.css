@@ -133,3 +133,22 @@
 .char-bar__send > button:active {
   outline: none;
 }
+
+@keyframes chatpush {
+  from {
+  }
+  to {
+    opacity: 1;
+    transform: translatey(0px);
+  }
+}
+
+.chat-push {
+  opacity: 0;
+  transform: translatey(50px);
+  animation: chatpush 1s linear forwards;
+}
+
+.chat__me {
+  animation-delay: 2s;
+}
